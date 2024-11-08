@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neighborhood Walk</title>
+  <style>
+    h1 {
+      color: white;
+      font-size: 30px;
+      background-color: gray;
+      text-align: center;
+      margin: 0; /* 去掉默认边距 */
+    }
+
+    body {
+      margin: 25px;
+      background-color: rgb(240, 240, 240);
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: rgb(250, 250, 250);
+    }
+
+    nav {
+      display: flex; /* 使用 Flexbox 布局 */
+      justify-content: space-between; /* 项目之间留空 */
+      align-items: center; /* 垂直居中对齐 */
+      width: 80%;
+      background-color: gray;
+      padding: 10px 0; /* 增加内边距 */
+      margin: 0 auto; /* 水平居中 */
+    }
+
+    nav ul {
+      list-style-type: none; /* 去掉列表符号 */
+      padding: 0; /* 去掉默认内边距 */
+      margin: 0; /* 去掉默认边距 */
+      display: flex; /* 使用 Flexbox 布局 */
+      justify-content: center; /* 居中对齐 */
+    }
+
+    li {
+      margin: 0 15px; /* 项目之间的间距 */
+    }
+
+    li a {
+      color: white; /* 链接文本颜色 */
+      text-decoration: none; /* 去掉下划线 */
+      padding: 10px 15px; /* 增加可点击区域的内边距 */
+      display: block; /* 使整个区域可点击 */
+    }
+
+    li:hover {
+      background: #091e4214; /* 悬停时背景颜色 */
+      color: #42526e; /* 悬停时文本颜色 */
+    }
+
+    nav img {
+      width: 10%; /* 调整图片宽度 */
+      margin-left: 20px; /* 左侧边距 */
+    }
+
+    main {
+      background-color: white;
+      font-size: 18px;
+      padding: 20px; /* 为主内容添加内边距 */
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap; /* 允许图像换行 */
+      justify-content: space-between; /* 均匀分布图像 */
+      gap: 10px; /* 图像之间的间距 */
+    }
+
+    .image-gallery img {
+      flex: 1 1 calc(33.33% - 10px); /* 每个图像占据三分之一的宽度 */
+      max-width: 45%; /* 确保图像不超出容器 */
+      height: auto; /* 保持图像纵横比 */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    }
+
+    footer {
+      background-color: white;
+      text-align: center; /* 页脚文本居中 */
+      padding: 10px 0; /* 增加内边距 */
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
+        <li><a href="parks.html">Walks in the Park</a></li>
+      </ul>
+      <img src="images/BaconGallupPark.jpg" alt="Brown Labradoodle sitting next to a statue.">
+    </nav>
+    <h1>Neighborhood Walks</h1>
+  </header>
+  <main>
+    <div class="image-gallery">
+      <img src="images/bend_in_the_road.png" alt="A purple tree stands in contrast to the green leaved trees along a bend in the road">
+      <img src="images/pink_blossoms.png" alt="Small pink blossoms on an otherwise green leaved tree">
+      <img src="images/blooming_trees.png" alt="Brown Labradoodle sitting in front of white and purple blooming trees">
+      <img src="images/falling_petals.png" alt="A purple tulip tree that is beginning to shed its petals">
+      <img src="images/hanging_plants.png" alt="Red and green plants in a decorative hanging basket">
+      <img src="images/potted_plants.png" alt="A decorative planter with a variety of brightly colored plants">
+      <img src="images/red_maple.png" alt="A small Japanese maple tree in front of a purple door">
+      <img src="images/tree_with_white_blooms.png" alt="Brown Labradoodle sitting in front of tree blooming with white petals">
+      <img src="images/tulips.png" alt="Bright red tulips in front of a garden light">
+      <img src="images/white_buds_on_tree.png" alt="Artsy shot of white blooms on a green tree with a dark background">
+    </div>
+  </main>
+  <footer>
+    <p>This page was originally created by Colleen van Lent for the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody</a> Specialization. Students are invited to make changes.</p>
+  </footer>
+</body>
+
+</html>
